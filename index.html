@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WhatsApp Link Generator</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" type="image/png" href="./assets/img/logo-icon.png"/>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./assets/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+        <!-- My CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <!-- My Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;600&family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Background -->
+        <div class="background-overlay" style="overflow-y: scroll;">
+            <!-- Start Container -->
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="logo text-center">
+                            <img src="./assets/img/logo.png" width="200px" alt="">
+                        </div>
+                        <h1 class="text-center">WhatsApp Link Generator</h1>
+                        <h2 class="text-center">Silahkan gunakan halaman ini untuk membuat link untuk menuju ke WA Anda.</h2>
+
+                        <!-- Input Number -->
+                        <div class="form-group text-center text-white" style="margin-top: 100px;">
+                            <label for="number">*Masukkan Nomor Wa Anda disini :</label>
+                            <br>
+                            <input type="number" id="number" style="width: 300px; padding: 10px; margin: 10px; color: #111; font-size: 30px; border-radius: 15px;" value="62" >
+                        </div>
+
+                        <!-- Input Message -->
+                        <div class="form-group text-center text-white mt-4">
+                            <label>*Masukkan Isi Pesan disini :</label>
+                            <br>
+                            <textarea id="message" cols="30" rows="5" style="width: 300px; padding: 10px; margin: 10px; color: #111; font-size: 20px; border-radius: 15px;" placeholder="Masukkan Pesan"></textarea>
+                        </div>
+                        <!-- End Form Input -->
+
+                        <!-- Generate Button -->
+                        <div class="text-center mb-5">
+                            <a href="#result" id="generate" class="btn btn-primary">Generate Link</a>
+                        </div>
+
+                        <!-- Result -->
+                        <section class="result d-flex justify-content-center">
+                            <input type="text" id="result" style="text-align: center; width: 100%; padding: 10px; margin: 10px; color: #111; font-size: 15px; border-radius: 15px;" readonly>
+                        </section>
+
+                        <!-- Copy Button -->
+                        <div class="text-center mb-5">
+                            <a href="#result" id="copy" onclick="copyToClipboard('#result')" role="button" class="btn btn-warning" style="background-color: #DFA316;">Copy Link</a>
+                        </div>
+
+                        <!-- Rules -->
+                        <section class="rules mt-5 d-flex justify-content-center">
+                            <div class="card" style="width: 38rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center font-weight-bold mb-4">Cara Penggunaan</h5>
+                                    <ol>
+                                        <li class="card-text">Silahkan masukkan nomor WA dan pesan di kolom yang disediakan.</li>
+                                        <li class="card-text">Kemudian klik tombol “Generate Link” untuk menggenerate link WA.</li>
+                                        <li class="card-text">Klik tombol “Copy Link” untuk menyalin link.</li>
+                                        <li class="card-text"> Kami <b>tidak</b> menyimpan semua data yang Anda input.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Footer -->
+                        <p class="text-white" style="text-align: center; margin-top: 70px;">Presented by Edubisnis.id</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Container -->
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="./assets/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

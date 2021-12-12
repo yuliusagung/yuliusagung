@@ -1,0 +1,84 @@
+body {
+    font-family: 'Asap', sans-serif;
+    margin: 0;
+}
+
+/* Background */
+body {
+    background-image: url("../img/640976.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #151515 0%, #1064ab 100%);
+    background-size: cover;
+    opacity: 0.91;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: unset;
+    }
+}
+/* Content */
+
+.container .col-12 h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 47px;
+    color: #f7b311;
+}
+
+.container .col-12 h2 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.col-12 .btn-primary, .btn-warning {
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 15px 40px 15px 40px;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.col-12 .btn-success:hover, .btn-warning:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+      transform: translate3d(-2px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(2px, 0, 0);
+  }
+}
+
+.rules .card {
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 15px 39px 0px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 15px 39px 0px rgba(0,0,0,0.51);
+    box-shadow: 0px 15px 39px 0px rgba(0,0,0,0.51);
+}
+
+.rules .card-text {
+    font-family: Arial, Helvetica, sans-serif;
+}
